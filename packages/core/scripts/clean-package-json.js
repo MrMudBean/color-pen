@@ -13,19 +13,19 @@ let packageJson = readFileToJsonSync('./package.json');
 
 packageJson = {
   ...packageJson,
-  main: 'cjs/index.cjs',
-  types: 'types/index.d.ts',
-  module: 'mjs/index.mjs',
-  files: ['mjs', 'cjs', 'types'],
+  main: 'index.cjs',
+  types: 'index.d.ts',
+  module: 'index.mjs',
+  files: ['index.mjs', 'index.cjs', 'index.d.ts', 'src'],
   exports: {
     '.': {
       import: {
-        default: './mjs/index.mjs',
-        types: './types/index.d.ts',
+        default: './index.mjs',
+        types: './index.d.ts',
       },
       require: {
-        default: './cjs/index.cjs',
-        types: './types/index.d.ts',
+        default: './index.cjs',
+        types: './index.d.ts',
       },
     },
   },
@@ -44,7 +44,7 @@ packageJson = {
     registry: 'https://registry.npmjs.org/',
   },
   author: {
-    name: 'earthnut',
+    name: '花生亻',
     email: 'earthnut.dev@outlook.com',
     url: 'https://earthnut.dev',
   },
