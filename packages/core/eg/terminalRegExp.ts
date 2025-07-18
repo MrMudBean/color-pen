@@ -1,4 +1,4 @@
-import { dev } from '@qqi/dev-log';
+import { dev } from '@qqi/dev';
 import { isNull } from 'a-type-of-js';
 import { csi, esc, terminalRegExp } from '@color-pen/static';
 

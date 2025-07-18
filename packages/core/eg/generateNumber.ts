@@ -7,7 +7,7 @@
  *  @Description 测试使用 ANSI 色值数值
  ****************************************************************************/
 
-import { dev } from '@qqi/dev-log';
+import { dev } from '@qqi/dev';
 import { pen } from '../index';
 import assert from 'node:assert';
 

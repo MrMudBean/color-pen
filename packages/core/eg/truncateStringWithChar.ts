@@ -1,4 +1,4 @@
-import { dev } from '@qqi/dev-log';
+import { dev } from '@qqi/dev';
 import { truncateStringWithChar } from '..';
 import assert from 'node:assert';
 

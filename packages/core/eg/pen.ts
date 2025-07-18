@@ -1,4 +1,4 @@
-import { dev } from '@qqi/dev-log';
+import { dev } from '@qqi/dev';
 import { _p } from 'a-node-tools';
 import { randomPen, redPen } from '..';
 dev.skip('测试各种笔的样式', it => {

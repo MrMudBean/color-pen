@@ -1,5 +1,5 @@
 import { pen } from '../index';
-import { dev } from '@qqi/dev-log';
+import { dev } from '@qqi/dev';
 
 dev.skip('测试参数为单字符串的情况', () => {
   const log = console.log;

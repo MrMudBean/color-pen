@@ -1,4 +1,4 @@
-import { dev } from '@qqi/dev-log';
+import { dev } from '@qqi/dev';
 import { pen } from '../index';
 import assert from 'node:assert';
 import { terminalResetStyle } from '@color-pen/static';

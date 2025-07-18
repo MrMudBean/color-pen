@@ -118,7 +118,7 @@ pen.color(0x0000ff)`期待是蓝色文本`; // 其实输出的是任意色的文
 
 ```ts
 import { pen } from 'color-pen';
-import { Dog } from '@qqi/dev-log';
+import { Dog } from '@qqi/log';
 
 const dog = new Dog({
   name: 'color pen',
@@ -172,7 +172,7 @@ v2 版本导出了简单样式的笔。在同一个项目中，重复使用同�
 
 ```ts
 import { redPen, bluePen } from 'color-pen';
-import { Dog } from '@qqi/dev-log';
+import { Dog } from '@qqi/log';
 
 const dog = new Dog({
   name: 'color pen',
