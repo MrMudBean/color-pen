@@ -8,7 +8,8 @@ REPO_ROOT=$REPO_ROOT
 PUB_ERROR=()
 CHECK_VERSION="@qqi/check-version"
 # 读取版本检测是否可用
-source ./scripts/check_version_install.sh 
+# source ./scripts/check_version_install.sh 
+printf $(pnpm dlx "${CHECK_VERSION}" -v)  # 更改全局安装的测试方法
 echo "工作根路径 $REPO_ROOT"
 PACKAGES_DIR="${REPO_ROOT}/packages"
 # 将字符串转为数组
@@ -21,7 +22,7 @@ update_version() {
 
     local tag=""
     cd $REPO_ROOT # 每次需要手动更新到根下才能正确的校验版本号
-    if ! tag=$(npx "${CHECK_VERSION}" n=${input} 2>&1); then
+    if ! tag=$(pnpm dlx "${CHECK_VERSION}" n=${input} 2>&1); then
        echo "未通过版本校验：$tag"
        return 0 
     fi
@@ -34,8 +35,9 @@ update_version() {
     cd "$CWD"
 
     # 依赖安装 
-    npm ci
-    if ! npm run build; then 
+    # npm ci
+    pnpm install --frozen-lockfile --prod=false
+    if ! pnpm run build; then 
       echo "构建 $NAME 失败" 
       PUB_ERROR+=("$input")
       return 0
@@ -49,7 +51,7 @@ update_version() {
     cd "${BUILD_DIST}" 
     
     echo "开始发布 $NAME npm 包 ${tag} 版本"
-    if ! npm publish --provenance --access public --tag "${tag}" ; then
+    if ! pnpm publish --provenance --access public --tag "${tag}" --no-git-checks ; then
         echo "💥💥💥 $NAME 发布到 npm 💥💥💥"
         PUB_ERROR+=("$input")
     else 
@@ -64,7 +66,8 @@ main() {
       exit 0
     fi
     echo "☁️ 来"
-    install_check_version # 检查版本包安装校验
+    # install_check_version # 检查版本包安装校验
+    printf $(pnpm dlx "${CHECK_VERSION}" -v)  # 更改全局安装的测试方法
     # 遍历变更的包数组，进行 npm 包推送
     # "${ARR[@]}" 引用数组所有元素
     # "${!ARR[@]}" 引用数组所有索引 ${ARR[$index]}

@@ -2,7 +2,7 @@
   "name": "color-pen",
   "type": "module",
   "private": true,
-  "version": "2.0.12",
+  "version": "2.0.13-test.0",
   "description": "一个用于终端的彩色 🖊️",
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",

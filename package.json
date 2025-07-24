@@ -6,7 +6,7 @@
   "scripts": {
     "diff": "jja pkg --diff",
     "eslint": "jja cls && eslint packages",
-    "beautify": "npm run eslint && npm run prettier",
+    "beautify": "pnpm run eslint && pnpm run prettier",
     "prettier": "jja cls && prettier . --write",
     "push:version": "gvv",
     "push": "gvv",
