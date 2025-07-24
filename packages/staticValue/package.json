@@ -5,11 +5,11 @@
   "description": "一点点 🤏 color-pen 的静态数据",
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
-    "build": "jja rm dist && npm run  b && npm run clean:package-json",
+    "build": "jja rm dist && pnpm run  b && pnpm run clean:package-json",
     "clean:package-json": "node scripts/clean-package-json.js",
     "diff": "jja pkg --diff",
     "eslint": "jja cls && eslint src",
-    "beautify": "npm run prettier",
+    "beautify": "pnpm run prettier",
     "prettier": "jja cls && prettier . --write",
     "prepublishOnly": "pjj",
     "vjj": "vjj",

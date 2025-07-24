@@ -7,11 +7,11 @@
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
     "clean:package": "node scripts/clean-package-json.js",
-    "build": "jja rm dist && npm run b && npm run clean:package",
+    "build": "jja rm dist && pnpm run b && pnpm run clean:package",
     "dev": "jja cls rm .eg && rollup --config rollup.eg.config.js && node .eg/index.mjs",
     "diff": "jja pkg --diff",
     "eslint": "jja cls && eslint src",
-    "beautify": "npm run eslint && npm run prettier",
+    "beautify": "pnpm run eslint && pnpm run prettier",
     "prettier": "jja cls && prettier . --write",
     "test": "jja rm dist && lint-staged && jest --coverage",
     "report": "cat ./coverage/lcov.info | coveralls",
