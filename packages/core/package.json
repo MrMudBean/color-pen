@@ -2,7 +2,7 @@
   "name": "color-pen",
   "type": "module",
   "private": true,
-  "version": "2.0.13-test.0",
+  "version": "2.0.13",
   "description": "一个用于终端的彩色 🖊️",
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@color-pen/static": "^1.0.0",
+    "@color-pen/static": "^1.0.1",
     "a-js-tools": "^1.0.10",
     "a-type-of-js": "^1.0.7"
   }

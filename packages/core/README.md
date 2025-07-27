@@ -252,5 +252,5 @@ console.log(redBoldPen3`红色文本`);
 
 ## 文档地址
 
-- 本包文档参看 [https://earthnut.dev/color-pen/](https://earthnut.dev/color-pen/)
+- 本包文档参看 [https://earthnut.dev/npm/color-pen/](https://earthnut.dev/npm/color-pen/)
 - [ANSI](https://earthnut.dev/%E6%97%A5%E5%BF%97/ANSI%20%E8%BD%AC%E4%B9%89%E7%A0%81) 转义相关
