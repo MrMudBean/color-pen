@@ -73,4 +73,4 @@ console.log(tempRegExp.test('\x1b[38;5;236m')); // true
 
 ## 文档地址
 
-[@color-pen/static](https://earthnut.dev/color-pen/static)
+[@color-pen/static](https://earthnut.dev/npm/color-pen/static)

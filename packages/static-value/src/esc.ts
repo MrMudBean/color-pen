@@ -11,5 +11,3 @@ export type escString = string & ESC;
 
 /**   ANSI 转义序列的起始标志符  */
 export const esc = _esc as escString;
-
-esc._;

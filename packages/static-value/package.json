@@ -1,7 +1,7 @@
 {
   "name": "@color-pen/static",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一点点 🤏 color-pen 的静态数据",
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
@@ -12,7 +12,9 @@
     "beautify": "pnpm run prettier",
     "prettier": "jja cls && prettier . --write",
     "prepublishOnly": "pjj",
-    "vjj": "vjj",
+    "vjj": "vjj -b",
+    "push": "gvv",
+    "push:version": "gvv",
     "test": "jja cls && rollup --config rollup.config.test.js && node test/out/test/index.mjs"
   },
   "license": "MIT"

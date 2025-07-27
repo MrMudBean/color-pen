@@ -1,21 +1,4 @@
-# qqi
+# color-pen-root
 
-有一天
-
-有一个疯子
-
-还有一个傻子
-
-是好朋友
-
-后来
-
-据说
-
-疯子傻了
-
-傻子疯了
-
-风吹过了
-
-传播着他们的故事
+[color-pen](./packages/core/)
+[static](./packages/staticValue/)

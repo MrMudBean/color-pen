@@ -29,8 +29,8 @@ packageJson = {
       },
     },
   },
-  keywords: ['@color-pen/static', '彩色笔'],
-  homepage: 'https://earthnut.dev/color-pen/static',
+  keywords: ['@color-pen/static', '彩色笔', 'color-pen'],
+  homepage: 'https://earthnut.dev/npm/color-pen/static',
   bugs: {
     url: 'https://github.com/earthnutDev/color-pen/issues',
     email: 'earthnut.dev@outlook.com',

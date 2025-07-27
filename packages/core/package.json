@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "@color-pen/static": "^1.0.0",
-    "a-js-tools": "^1.0.8",
-    "a-type-of-js": "^1.0.5"
+    "a-js-tools": "^1.0.10",
+    "a-type-of-js": "^1.0.7"
   }
 }
