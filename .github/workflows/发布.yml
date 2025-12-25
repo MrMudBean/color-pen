@@ -50,9 +50,15 @@ jobs:
       - name: 初始化 Node 并设定 Node 版本
         uses: actions/setup-node@v4
         with:
-          node-version: 22.x
+          node-version: 24
           registry-url: https://registry.npmjs.org
-          # cache: 'pnpm' # 该行添加后触发了 github action 的发布错误
+          always-auth: false # 强制使用 OIDC 命令
+
+      - name: clean npm auth
+        run: |
+          npm config delete //registry.npmjs.org/:_authToken
+          rm -f ~/.npmrc
+        shell: bash
 
       - name: pnpm 安装
         uses: pnpm/action-setup@v2
