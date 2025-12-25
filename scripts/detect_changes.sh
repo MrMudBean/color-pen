@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# 校验当前提交的修改涉及到的包目录
+## 通过对比 git 修改中 packages/** 下的目录判定
+## 之作文件
+
 # 获取上一次提交的 SHA
 PREVIOUS_COMMIT=$(git rev-parse HEAD^)
 CURRENT_COMMIT=$(git rev-parse HEAD)

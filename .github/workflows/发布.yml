@@ -21,6 +21,13 @@ on:
           - all
         default: 'all'
 
+# 新的 OpenID Connect 验证方式
+# 无需手动填写 NODE_AUTH_TOKEN 且定期更换
+permissions:
+  id-token: write # 唯一必须的权限：启用 OIDC
+  contents: read # write 必须，克隆代码库权限
+  # packages: write
+
 jobs:
   pub:
     # 在提交的代码包含 `version` 字样时才运行该动作
@@ -28,10 +35,6 @@ jobs:
     name: |
       发布到 npm
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: write
-      id-token: write
     # 复合条件判断（自动触发检查提交信息，手动触发直接放行）
     if: |
       (github.event_name == 'push' && startsWith(github.event.head_commit.message, 'version')) ||
@@ -57,23 +60,23 @@ jobs:
           version: 10
           run_install: false
 
-      - name: 缓存 pnpm
-        id: pnpm-store
-        run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+      # - name: 缓存 pnpm
+      #   id: pnpm-store
+      #   run: echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - name: Cache pnpm store
-        uses: actions/cache@v4
-        with:
-          path: ${{ steps.pnpm-store.outputs.STORE_PATH }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+      # - name: Cache pnpm store
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: ${{ steps.pnpm-store.outputs.STORE_PATH }}
+      #     key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-pnpm-store-
 
       - name: 安装全局依赖
         run: |
           # npm ci # npm 安装依赖
           pnpm install --frozen-lockfile --prod=false
-          cd scripts
+          cd scripts # 进入构建文件夹
           chmod +x detect_changes.sh workflow_dispatch.sh pub.sh
           # chmod +x scripts/detect_changes.sh
           # chmod +x scripts/workflow_dispatch.sh
@@ -100,7 +103,8 @@ jobs:
       - name: 发布到 npm
         if: ${{ env.update_packages && env.update_packages != '' }}
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_CONFIG_USERCONFIG: /dev/null # 强制忽略本地配置
+          # NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           UPDATE_PACKAGES: ${{ env.update_packages }}
           REPO_ROOT: ${{ env.REPO_ROOT }}
         run: |

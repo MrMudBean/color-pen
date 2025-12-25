@@ -7,7 +7,7 @@
  *  @Description ANSI 转义相关
  ****************************************************************************/
 
-import { csi } from './src/csi';
+import { csi } from './csi';
 
 /**
  * 重置终端的样式
@@ -16,6 +16,6 @@ import { csi } from './src/csi';
  */
 export const terminalResetStyle = `${csi}0m`;
 
-export { csi } from './src/csi';
-export { esc } from './src/esc';
-export { terminalRegExp } from './src/terminalRegExp';
+export { csi } from './csi';
+export { esc } from './esc';
+export { terminalRegExp } from './terminalRegExp';

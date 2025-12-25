@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# 校验是否全局安装了 @qqi/check-version
+ 
 install_check_version() {
     # 在子项目的直接
     if ! npm  list -g --depth=0 | grep -q " ${CHECK_VERSION}"; then 
