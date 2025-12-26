@@ -1,4 +1,4 @@
-import { generatePen } from './src/pen';
+import { generatePen } from './pen';
 
 export { generatePen };
 
@@ -52,22 +52,22 @@ export {
   dimPen,
   blinkPen,
   reversedPen,
-} from './src/penList';
+} from './penList';
 
 export type {
   Pen,
   KindListKey,
   StringKindList,
   FunctionKindList,
-} from './src/types';
+} from './types';
 
-export { strInTerminalLength } from './src/strInTerminalLength';
+export { strInTerminalLength } from './strInTerminalLength';
 
 export {
   truncateStringWithChar,
   truncateStringWithChar as cutoffStringWithChar,
-} from './src/truncateStringWithChar';
+} from './truncateStringWithChar';
 
-export { strInOneLineOnTerminal } from './src/strInOneLineOnTerminal';
+export { strInOneLineOnTerminal } from './strInOneLineOnTerminal';
 
-export { colorText } from './src/colorText/index';
+export { colorText } from './colorText';

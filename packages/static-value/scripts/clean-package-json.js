@@ -78,6 +78,7 @@ packageJson = {
     url: 'https://earthnut.dev',
   },
   description: '一点点 🤏 color-pen 的静态数据',
+  sideEffects: false, // 核心：开启 Tree Shaking （还好这个包没有什么多余的内容）
   exports: {
     '.': {
       import: `./${esPrefix}/index.js`,

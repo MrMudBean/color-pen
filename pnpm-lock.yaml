@@ -120,16 +120,18 @@ importers:
   packages/core:
     dependencies:
       '@color-pen/static':
-        specifier: ^1.0.1
-        version: 1.0.1
+        specifier: ^1.1.0
+        version: 1.1.0
       a-js-tools:
-        specifier: ^1.0.10
-        version: 1.0.10
+        specifier: ^2.0.0
+        version: 2.0.0
       a-type-of-js:
-        specifier: ^1.0.7
-        version: 1.0.7
+        specifier: ^2.0.0
+        version: 2.0.0
 
   packages/static-value: {}
+
+  packages/static-value/dist: {}
 
 packages:
 
@@ -301,8 +303,8 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@color-pen/static@1.0.1':
-    resolution: {integrity: sha512-dV1nK4MyNsc9uR3vOLeDPvMXV6yOkd+Wmrc00xGjjHpAAj1k1Gb4lmWMMwn4vkkwc1TatexbJDTbbFwu54376g==}
+  '@color-pen/static@1.1.0':
+    resolution: {integrity: sha512-lS3xsQuz+4stPi3xHfa4x8fc8nHu9cPq3wjkYElNE0Br5AjFSMnPh3AmvN6Os5eFPzDSF7KqxC6wIo9pEb2p/Q==}
     engines: {node: '>=12.0.0'}
 
   '@csstools/color-helpers@5.1.0':
@@ -989,23 +991,24 @@ packages:
     resolution: {integrity: sha512-v0QwGJqUnvn/+BiXyFvDCo1BpgaUFfSp09iCQRbvYX4MV4QJAlp52jBuELYGHmJzv2qpVZUy1fsPwAL+x4+23A==}
     hasBin: true
 
-  a-js-tools@1.0.10:
-    resolution: {integrity: sha512-axdivxCVdjn3yjx7XsTHR9BT8/F2tgtyIYGzMciVR9Lz0xLDdAdfyXwLWcSr08DNbZZWPquJf9RSYHLR+sS2oQ==}
-    engines: {node: '>=15.0.0'}
-
   a-js-tools@1.0.12:
     resolution: {integrity: sha512-D32I7JxOIsZNfm/VU17uqyzMqBTs1EZS46uPrttYMmecD+QNfQ2OIySd6abNNPMzKGN6KQTKYR9sWtdfLIl/Rw==}
     engines: {node: '>=15.0.0'}
+
+  a-js-tools@2.0.0:
+    resolution: {integrity: sha512-ABdAuIyJlBoNlRVD0frN72qvRlxBVxqWp1u1iQtdFlwFVAbUhKjkPBrkIaj2f7Cw8DeRcTBD7VcKIg3deR6NjQ==}
+    engines: {node: '>=18.0.0'}
 
   a-node-tools@4.2.20:
     resolution: {integrity: sha512-NqNuMobup+Q8tESJIoX/KtzgQUOQs/dJBhe36AEa1DXJ6liCIhBqfcZ0sM5PVovW46OYIK0LM9YjqFfxSwuuxw==}
     engines: {node: '>=18.0.0'}
 
-  a-type-of-js@1.0.7:
-    resolution: {integrity: sha512-O7pkkRHQii4xt4Po+7N7mVk7xm9APzv6PZdgErSFBuRDSUrHZu5T6TYmFE24/WTR+m4lerbtXBbQfWjRmGyusQ==}
-
   a-type-of-js@1.1.0:
     resolution: {integrity: sha512-vbv/wX5rXOJBEQjpgrADxeQ77fGiaQR1VoqEbun5WU8DimBeb8ymlUEBlLhlWIoPyrnnwpeAdnWwQAzceuAdBg==}
+    engines: {node: '>=14.0.0'}
+
+  a-type-of-js@2.0.0:
+    resolution: {integrity: sha512-rQdioSQdu8M/DYe2a5k9JN5Kn6BBFy/pDVMP48LeH1MdhuTfm1U+EocJPXFIBtf85HKPRIlO3jIbzByXsRNqRQ==}
     engines: {node: '>=14.0.0'}
 
   acorn-jsx@5.3.2:
@@ -3000,7 +3003,7 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@color-pen/static@1.0.1': {}
+  '@color-pen/static@1.1.0': {}
 
   '@csstools/color-helpers@5.1.0': {}
 
@@ -3389,7 +3392,7 @@ snapshots:
 
   '@qqi/log@0.1.1':
     dependencies:
-      '@color-pen/static': 1.0.1
+      '@color-pen/static': 1.1.0
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
       color-pen: 2.0.13
@@ -3773,32 +3776,32 @@ snapshots:
 
   a-command@2.3.16:
     dependencies:
-      '@color-pen/static': 1.0.1
+      '@color-pen/static': 1.1.0
       '@qqi/log': 0.1.1
       a-js-tools: 1.0.12
       a-node-tools: 4.2.20
       a-type-of-js: 1.1.0
       color-pen: 2.0.13
 
-  a-js-tools@1.0.10:
-    dependencies:
-      a-type-of-js: 1.0.7
-
   a-js-tools@1.0.12:
     dependencies:
       a-type-of-js: 1.1.0
 
+  a-js-tools@2.0.0:
+    dependencies:
+      a-type-of-js: 2.0.0
+
   a-node-tools@4.2.20:
     dependencies:
-      '@color-pen/static': 1.0.1
+      '@color-pen/static': 1.1.0
       '@qqi/log': 0.1.1
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
       color-pen: 2.0.13
 
-  a-type-of-js@1.0.7: {}
-
   a-type-of-js@1.1.0: {}
+
+  a-type-of-js@2.0.0: {}
 
   acorn-jsx@5.3.2(acorn@8.15.0):
     dependencies:
@@ -4020,13 +4023,13 @@ snapshots:
 
   color-pen@2.0.13:
     dependencies:
-      '@color-pen/static': 1.0.1
+      '@color-pen/static': 1.1.0
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
 
   colored-table@0.1.0:
     dependencies:
-      '@color-pen/static': 1.0.1
+      '@color-pen/static': 1.1.0
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
       color-pen: 2.0.13
@@ -4945,7 +4948,7 @@ snapshots:
 
   jja@2.3.21:
     dependencies:
-      '@color-pen/static': 1.0.1
+      '@color-pen/static': 1.1.0
       '@qqi/copy-text': 1.0.7
       '@qqi/log': 0.1.1
       a-command: 2.3.16

@@ -1,7 +1,7 @@
 {
   "name": "@color-pen/static",
   "type": "module",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
     "build": "jja rm dist && pnpm run  b && pnpm run clean:package-json",
