@@ -1,7 +1,5 @@
-import { generatePen } from './pen';
-
-export { generatePen };
-
+export { colorText } from './colorText';
+export { generatePen } from './pen';
 export {
   pen,
   redPen,
@@ -54,13 +52,6 @@ export {
   reversedPen,
 } from './penList';
 
-export type {
-  Pen,
-  KindListKey,
-  StringKindList,
-  FunctionKindList,
-} from './types';
-
 export { strInTerminalLength } from './strInTerminalLength';
 
 export {
@@ -70,4 +61,9 @@ export {
 
 export { strInOneLineOnTerminal } from './strInOneLineOnTerminal';
 
-export { colorText } from './colorText';
+export type {
+  Pen,
+  KindListKey,
+  StringKindList,
+  FunctionKindList,
+} from './types';

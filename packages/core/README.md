@@ -1,12 +1,12 @@
 # 一个用于终端的彩 🖊️
 
-[![version](<https://img.shields.io/npm/v/color-pen.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/color-pen) [![Coverage Status](<https://img.shields.io/coverallsCoverage/github/earthnutDev/color-pen?logo=coveralls&label=coveralls&labelColor=rgb(12, 244, 39)&color=rgb(0,0,0)>)](https://coveralls.io/github/earthnutDev/color-pen?branch=main) [![codecov](<https://img.shields.io/codecov/c/github/earthnutDev/color-pen/main?logo=codecov&label=codecov&labelColor=rgb(7, 245, 245)&color=rgb(0,0,0)>)](https://codecov.io/gh/earthnutDev/color-pen) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/earthnutDev/color-pen/issues)
+[![version](<https://img.shields.io/npm/v/color-pen.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/color-pen) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/MrMudBean/color-pen/issues)
 
 ## 颜色模块
 
-~~一个运用于 terminal（意味着无法在浏览器环境使用，实际上，浏览器有更简便的[实现方式](https://developer.mozilla.org/zh-CN/docs/Web/API/console)） 的字符串色值~~
-
 现在添加了 `colorText` 方法，可创建一个在浏览器可用的彩色文本（浏览器支持的样式比终端要多得多，譬如光标样式、圆角、外边框、阴影。。。。。）。
+
+_广子_ ： 如果有需要在控制台或终端绘制彩色表格的需求，可以使用 [colored-table](https://www.npmjs.com/package/colored-table)
 
 ## ANSI 模块相关
 
@@ -252,5 +252,8 @@ console.log(redBoldPen3`红色文本`);
 
 ## 文档地址
 
-- 本包文档参看 [https://earthnut.dev/npm/color-pen/](https://earthnut.dev/npm/color-pen/)
-- [ANSI](https://earthnut.dev/%E6%97%A5%E5%BF%97/ANSI%20%E8%BD%AC%E4%B9%89%E7%A0%81) 转义相关
+- 本包文档参看 [color-pen]
+- [ANSI] 转义相关
+
+[ANSI]: https://earthnut.dev/%E5%BB%BA%E7%AB%99%E6%97%A5%E5%BF%97/2025/4/22/ANSI%20%E8%BD%AC%E4%B9%89%E7%A0%81
+[color-pen]: https://earthnut.dev/npm/color-pen/

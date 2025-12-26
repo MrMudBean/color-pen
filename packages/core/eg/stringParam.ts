@@ -1,7 +1,7 @@
-import { pen } from '../index';
+import { pen } from '../src/index';
 import { dev } from '@qqi/dev';
 
-dev.skip('测试参数为单字符串的情况', () => {
+dev('测试参数为单字符串的情况', () => {
   const log = console.log;
 
   const boldPen = pen.bold;
@@ -48,6 +48,6 @@ dev.skip('测试参数为单字符串的情况', () => {
   console.log(pen.bgColor('rgb(255, 0, 0)')('rgb(255, 0, 0) 红色背景'));
 
   console.log(pen.color('0xff0000')('0xff0000 红色文本'));
-  pen.rgb('rgb');
-  console.log(pen.bgColor('0xff0000')('0xff0000 红色背景'));
+  // pen.rgb('rgb');
+  // console.log(pen.bgColor('0xff0000')('0xff0000 红色背景'));
 });

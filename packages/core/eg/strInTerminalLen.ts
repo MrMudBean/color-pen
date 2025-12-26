@@ -1,6 +1,6 @@
 import { dev } from '@qqi/dev';
 import assert from 'node:assert';
-import { strInTerminalLength } from '../index';
+import { strInTerminalLength } from '../src/index';
 
 dev.skip('测试字符串在终端显示的字符宽度', async it => {
   it('测试 ', async () => {

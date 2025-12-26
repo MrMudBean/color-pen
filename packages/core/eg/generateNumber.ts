@@ -1,6 +1,6 @@
 /****************************************************************************
- *  @Author earthnut
- *  @Email earthnut.dev@outlook.com
+ *  @Author Mr.MudBean
+ *  @Email Mr.MudBean@outlook.com
  *  @ProjectName color pen
  *  @FileName generateNumber.ts
  *  @CreateDate  周四  04/24/2025
@@ -8,10 +8,10 @@
  ****************************************************************************/
 
 import { dev } from '@qqi/dev';
-import { pen } from '../index';
+import { pen } from '../src/index';
 import assert from 'node:assert';
 
-dev.skip('测试 ANSI 色值数值', async it => {
+dev('测试 ANSI 色值数值', async it => {
   it('测试使用正常数值', () => {
     assert.equal(pen.number(1)`你好`, '\x1b[38;5;1m你好\x1b[0m');
   });

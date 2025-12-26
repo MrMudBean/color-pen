@@ -1,9 +1,15 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "rootDir": ".",
     "emitDeclarationOnly": true,
     "declaration": true,
-    "declarationDir": "dist/"
+    "declarationDir": "dist/es"
   },
-  "exclude": ["node_modules", "**/*.test.ts", "todo", "eg"]
+  "exclude": [
+    "node_modules",
+    "**/*.test.ts",
+    "todo",
+    "eg"
+  ]
 }

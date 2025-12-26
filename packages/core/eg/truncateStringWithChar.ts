@@ -1,5 +1,5 @@
 import { dev } from '@qqi/dev';
-import { truncateStringWithChar } from '..';
+import { truncateStringWithChar } from '../src';
 import assert from 'node:assert';
 
 dev('测试 truncateStringWithChar', async it => {

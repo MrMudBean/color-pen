@@ -120,11 +120,11 @@ importers:
   packages/core:
     dependencies:
       '@color-pen/static':
-        specifier: ^1.1.0
-        version: 1.1.0
+        specifier: ^1.1.1
+        version: 1.1.1
       a-js-tools:
-        specifier: ^2.0.0
-        version: 2.0.0
+        specifier: ^2.0.1
+        version: 2.0.1
       a-type-of-js:
         specifier: ^2.0.0
         version: 2.0.0
@@ -303,8 +303,8 @@ packages:
   '@bcoe/v8-coverage@0.2.3':
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
 
-  '@color-pen/static@1.1.0':
-    resolution: {integrity: sha512-lS3xsQuz+4stPi3xHfa4x8fc8nHu9cPq3wjkYElNE0Br5AjFSMnPh3AmvN6Os5eFPzDSF7KqxC6wIo9pEb2p/Q==}
+  '@color-pen/static@1.1.1':
+    resolution: {integrity: sha512-zSG9sOy+xQkQxbx+YjJ+LJoF5XNDsUMeVDIaIGW9w2CvbadwNVmyaY8bFhyuob70pt3EsD///9tNN+xkfeqzvw==}
     engines: {node: '>=12.0.0'}
 
   '@csstools/color-helpers@5.1.0':
@@ -995,8 +995,8 @@ packages:
     resolution: {integrity: sha512-D32I7JxOIsZNfm/VU17uqyzMqBTs1EZS46uPrttYMmecD+QNfQ2OIySd6abNNPMzKGN6KQTKYR9sWtdfLIl/Rw==}
     engines: {node: '>=15.0.0'}
 
-  a-js-tools@2.0.0:
-    resolution: {integrity: sha512-ABdAuIyJlBoNlRVD0frN72qvRlxBVxqWp1u1iQtdFlwFVAbUhKjkPBrkIaj2f7Cw8DeRcTBD7VcKIg3deR6NjQ==}
+  a-js-tools@2.0.1:
+    resolution: {integrity: sha512-jGQIIaXTeHXRUxKonKXFdFHSI4udcWH37ulrtact4SF5U7gN4gJcEdjdlHEam0b3A0V2RlCxdLZPV99DMVIEuA==}
     engines: {node: '>=18.0.0'}
 
   a-node-tools@4.2.20:
@@ -3003,7 +3003,7 @@ snapshots:
 
   '@bcoe/v8-coverage@0.2.3': {}
 
-  '@color-pen/static@1.1.0': {}
+  '@color-pen/static@1.1.1': {}
 
   '@csstools/color-helpers@5.1.0': {}
 
@@ -3392,7 +3392,7 @@ snapshots:
 
   '@qqi/log@0.1.1':
     dependencies:
-      '@color-pen/static': 1.1.0
+      '@color-pen/static': 1.1.1
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
       color-pen: 2.0.13
@@ -3776,7 +3776,7 @@ snapshots:
 
   a-command@2.3.16:
     dependencies:
-      '@color-pen/static': 1.1.0
+      '@color-pen/static': 1.1.1
       '@qqi/log': 0.1.1
       a-js-tools: 1.0.12
       a-node-tools: 4.2.20
@@ -3787,13 +3787,13 @@ snapshots:
     dependencies:
       a-type-of-js: 1.1.0
 
-  a-js-tools@2.0.0:
+  a-js-tools@2.0.1:
     dependencies:
       a-type-of-js: 2.0.0
 
   a-node-tools@4.2.20:
     dependencies:
-      '@color-pen/static': 1.1.0
+      '@color-pen/static': 1.1.1
       '@qqi/log': 0.1.1
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
@@ -4023,13 +4023,13 @@ snapshots:
 
   color-pen@2.0.13:
     dependencies:
-      '@color-pen/static': 1.1.0
+      '@color-pen/static': 1.1.1
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
 
   colored-table@0.1.0:
     dependencies:
-      '@color-pen/static': 1.1.0
+      '@color-pen/static': 1.1.1
       a-js-tools: 1.0.12
       a-type-of-js: 1.1.0
       color-pen: 2.0.13
@@ -4948,7 +4948,7 @@ snapshots:
 
   jja@2.3.21:
     dependencies:
-      '@color-pen/static': 1.1.0
+      '@color-pen/static': 1.1.1
       '@qqi/copy-text': 1.0.7
       '@qqi/log': 0.1.1
       a-command: 2.3.16

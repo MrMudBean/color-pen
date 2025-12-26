@@ -1,9 +1,9 @@
 import assert from 'node:assert';
 import { terminalRegExp as t } from '@color-pen/static';
-import { pen } from '../index';
+import { pen } from '../src/index';
 import { dev } from '@qqi/dev';
 
-dev.skip('测试与 ANSI 相关的代码', async it => {
+dev('测试与 ANSI 相关的代码', async it => {
   const terminalRegExp = t();
   it.beforeEach(() => {
     terminalRegExp.lastIndex = 0;

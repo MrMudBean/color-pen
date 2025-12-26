@@ -1,6 +1,6 @@
 import { dev } from '@qqi/dev';
 import { _p } from 'a-node-tools';
-import { randomPen, redPen } from '..';
+import { randomPen, redPen } from '../src';
 dev.skip('测试各种笔的样式', it => {
   it('测试 redPen', () => {
     _p(redPen`红色的字`.concat('普通的字'));

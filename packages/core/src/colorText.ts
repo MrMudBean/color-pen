@@ -1,5 +1,5 @@
 import { isNode } from 'a-js-tools';
-import { tearDownStr } from './tearDownStr';
+import { tearDownStr } from './utils/tearDownStr';
 
 /**
  *

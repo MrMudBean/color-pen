@@ -2,8 +2,7 @@
   "name": "color-pen",
   "type": "module",
   "private": true,
-  "version": "2.0.13",
-  "description": "一个用于终端的彩色 🖊️",
+  "version": "3.0.0",
   "scripts": {
     "b": "rollup --config rollup.config.js && tsc -p tsconfig.types.json",
     "clean:package": "node scripts/clean-package-json.js",
@@ -13,7 +12,7 @@
     "eslint": "jja cls && eslint src",
     "beautify": "pnpm run eslint && pnpm run prettier",
     "prettier": "jja cls && prettier . --write",
-    "test": "jja rm dist && lint-staged && jest --coverage",
+    "test": "pnpm run dev",
     "report": "cat ./coverage/lcov.info | coveralls",
     "coverage": "codecov",
     "preview": "node example/index.js",
@@ -22,10 +21,9 @@
     "vjj": "vjj -b",
     "prepublishOnly": "pjj"
   },
-  "license": "MIT",
   "dependencies": {
-    "@color-pen/static": "^1.1.0",
-    "a-js-tools": "^2.0.0",
+    "@color-pen/static": "^1.1.1",
+    "a-js-tools": "^2.0.1",
     "a-type-of-js": "^2.0.0"
   }
 }

@@ -1,6 +1,6 @@
 /****************************************************************************
- *  @Author earthnut
- *  @Email earthnut.dev@outlook.com
+ *  @Author Mr.MudBean
+ *  @Email Mr.MudBean@outlook.com
  *  @ProjectName color-pen
  *  @FileName t.ts
  *  @CreateDate  周二  04/22/2025

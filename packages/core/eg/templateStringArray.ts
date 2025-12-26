@@ -1,5 +1,5 @@
 import { dev } from '@qqi/dev';
-import { pen } from '../index';
+import { pen } from '../src/index';
 import assert from 'node:assert';
 import { terminalResetStyle } from '@color-pen/static';
 

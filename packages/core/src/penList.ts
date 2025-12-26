@@ -1,4 +1,4 @@
-import { kindList } from './color/kindList';
+import { kindList } from './utils/kindList';
 import { generatePen } from './pen';
 import { Pen } from './types';
 

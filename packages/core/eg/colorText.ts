@@ -1,8 +1,8 @@
 import { dev } from '@qqi/dev';
-import { pen } from '../index';
+import { pen } from '../src/index';
 import { colorText } from '../src/colorText';
 
-dev.skip('测试与 color text 相关的代码', dev => {
+dev('测试与 color text 相关的代码', dev => {
   dev('测试', () => {
     console.log('123');
   });
